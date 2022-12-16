@@ -15616,7 +15616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158.3, y: 200}
+  m_AnchoredPosition: {x: 158.3, y: 200.19995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357186602
@@ -22120,7 +22120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158.3, y: 234.40002}
+  m_AnchoredPosition: {x: 158.3, y: 234.59998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739057274
@@ -22933,8 +22933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -452, y: 244.40002}
-  m_SizeDelta: {x: 167, y: 59.8}
+  m_AnchoredPosition: {x: -414, y: 244.40002}
+  m_SizeDelta: {x: 269.4, y: 59.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777674559
 MonoBehaviour:
@@ -22956,7 +22956,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00
+  m_text: '00:00 PM
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6446991ef31ced4190c53c206cf4b3e, type: 2}
   m_sharedMaterial: {fileID: -9221056233183343877, guid: a6446991ef31ced4190c53c206cf4b3e,
@@ -23046,7 +23048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b91d1bd196e53408956c3001644008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayDuration: 60
+  dayDuration: 600
   clock: {fileID: 1777674559}
 --- !u!1 &1780728045
 GameObject:
@@ -24842,7 +24844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158.3, y: 268.80002}
+  m_AnchoredPosition: {x: 158.3, y: 269}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910818978

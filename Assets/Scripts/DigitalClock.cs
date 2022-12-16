@@ -20,7 +20,7 @@ public class DigitalClock : MonoBehaviour
         totalTime += Time.deltaTime;
         currentTime = totalTime % dayDuration;
 
-        clock.text = Clock24hour();
+        clock.text = Clock12Hour();
     }
 
     public float GetHour()
@@ -35,6 +35,21 @@ public class DigitalClock : MonoBehaviour
 
     public string Clock24hour()
     {
-        return Mathf.FloorToInt(GetHour()).ToString("00") + ":" + Mathf.FloorToInt(GetMinutes()).ToString("00");
+        return Mathf.FloorToInt(GetHour()).ToString("12") + ":" + Mathf.FloorToInt(GetMinutes()).ToString("00");
+    }
+
+    public string Clock12Hour()
+    {
+        int hour = Mathf.FloorToInt(GetHour());
+        string abbreviation = "PM";
+
+        if (hour >= 12)
+        {
+            abbreviation = "AM";
+            hour -= 12;
+        }
+
+        if (hour == 0) hour = 12;
+        return hour.ToString("00") + ":" + Mathf.FloorToInt(GetMinutes()).ToString("00") + " " + abbreviation;
     }
 }
