@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ChairCounter : MonoBehaviour
 {
-    static int Counter = 0;
+    static int Counter = 24;
     public GameObject CheckedBox;
+    
+
 
     public void CounterChair()
     {
@@ -14,6 +16,7 @@ public class ChairCounter : MonoBehaviour
         if (Counter == 24)
         {
             CheckedBox.SetActive(true);
+            GameManager.instance.gameOver.SetActive(true);
         }
     } 
 

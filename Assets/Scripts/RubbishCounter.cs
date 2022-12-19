@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RubbishCounter : MonoBehaviour
 {
-    static int Counter = 0;
+    static int Counter = 3;
     public GameObject CheckedBox;
+   
 
     public void CounterRubbish()
     {
@@ -14,6 +15,7 @@ public class RubbishCounter : MonoBehaviour
         if (Counter == 3)
         {
             CheckedBox.SetActive(true);
+            GameManager.instance.gameOver.SetActive(true);
         }
     }
 }
