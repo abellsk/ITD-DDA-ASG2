@@ -14,13 +14,18 @@ public class DigitalClock : MonoBehaviour
 
     public TextMeshProUGUI clock;
 
+    public bool timeMoving = true;
+
     // Update is called once per frame
     void Update()
     {
-        totalTime += Time.deltaTime;
-        currentTime = totalTime % dayDuration;
+        if (timeMoving)
+        {
+            totalTime += Time.deltaTime;
+            currentTime = totalTime % dayDuration;
 
-        clock.text = Clock12Hour();
+            clock.text = Clock12Hour();
+        }
     }
 
     public float GetHour()
@@ -43,10 +48,10 @@ public class DigitalClock : MonoBehaviour
         int hour = Mathf.FloorToInt(GetHour());
         string abbreviation = "PM";
 
-        if (hour >= 12)
+        if (hour == 6)
         {
-            abbreviation = "AM";
-            hour -= 12;
+            timeMoving = false;
+            return "06:00 " + abbreviation;
         }
 
         if (hour == 0) hour = 12;
