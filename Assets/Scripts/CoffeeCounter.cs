@@ -13,7 +13,7 @@ public class CoffeeCounter : MonoBehaviour
         if (Counter == 1)
         {
             CheckedBox.SetActive(true);
-            GameManager.instance.gameOver.SetActive(true);
+            GameManager.instance.TaskTracker();
             
         }
     }

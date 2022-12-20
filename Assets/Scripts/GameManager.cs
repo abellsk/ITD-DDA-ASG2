@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public GameObject gameOver;
     public static GameManager instance;
 
+    public int taskCounter = 0;
+
     private void Awake()
     {
         if(instance != null && instance != this)
@@ -21,9 +23,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GameEnd()
+    public void TaskTracker()
+    {
+        taskCounter++;
+        if (taskCounter >= 3)
+        {
+            DayEnd();
+        }
+        Debug.Log(taskCounter);
+    }
+
+    public void DayEnd()
     {
         gameOver.SetActive(true);
+
     }
 
     
@@ -36,6 +49,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -38,11 +38,6 @@ public class DigitalClock : MonoBehaviour
         return (currentTime * hoursInDay * minutesInHour / dayDuration) % minutesInHour;
     }
 
-    public string Clock24hour()
-    {
-        return Mathf.FloorToInt(GetHour()).ToString("12") + ":" + Mathf.FloorToInt(GetMinutes()).ToString("00");
-    }
-
     public string Clock12Hour()
     {
         int hour = Mathf.FloorToInt(GetHour());
@@ -51,6 +46,7 @@ public class DigitalClock : MonoBehaviour
         if (hour == 6)
         {
             timeMoving = false;
+            GameManager.instance.DayEnd();
             return "06:00 " + abbreviation;
         }
 

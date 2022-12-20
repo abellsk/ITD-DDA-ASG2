@@ -11,12 +11,12 @@ public class LightOnOff : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Lights = GetComponent<Light>();
+        //Lights = GetComponent<Light>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Lights.enabled = !Lights.enabled;
+        //Lights.enabled = !Lights.enabled;
     }
 }
