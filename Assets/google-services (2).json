@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796150653754",
+    "project_id": "itd-dda-asg2-cbfa0",
+    "storage_bucket": "itd-dda-asg2-cbfa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796150653754:android:8c760fe289bd718a302603",
+        "android_client_info": {
+          "package_name": "com.ITDddaAsg2.cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796150653754-h3dci3cu7kqe5jsl66v5a41u0170fdvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtWGbcKLVt9WFXW2HWbTKnY0GCPgVziVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796150653754-h3dci3cu7kqe5jsl66v5a41u0170fdvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

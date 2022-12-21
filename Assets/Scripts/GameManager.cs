@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOver;
     public static GameManager instance;
+    public GameObject signInPage;
+    public GameObject welcomePage;
 
     public int taskCounter = 0;
 

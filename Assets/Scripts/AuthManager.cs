@@ -145,6 +145,8 @@ public class AuthManager : MonoBehaviour
                     FirebaseUser currentPlayer = task.Result;
                     Debug.LogFormat("Welcome to NBA2K {0} :: {1}", currentPlayer.UserId, currentPlayer.Email);
                     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+                    GameManager.instance.signInPage.SetActive(false);
+                    GameManager.instance.welcomePage.SetActive(true);
                 }
             });
         }
