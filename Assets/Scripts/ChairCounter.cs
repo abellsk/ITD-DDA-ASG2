@@ -13,7 +13,7 @@ public class ChairCounter : MonoBehaviour
     {
         Counter++;
         Debug.Log("Chair Counter : " + Counter);
-        if (Counter == 36)
+        if (Counter == 11)
         {
             CheckedBox.SetActive(true);
             GameManager.instance.TaskTracker();

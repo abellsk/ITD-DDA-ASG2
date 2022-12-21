@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RubbishCounter : MonoBehaviour
 {
-    static int Counter = 2;
+    static int Counter = 0;
     public GameObject CheckedBox;
    
 
