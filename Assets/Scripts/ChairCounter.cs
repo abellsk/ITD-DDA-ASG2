@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChairCounter : MonoBehaviour
 {
-    static int Counter = 35;
+    static int Counter = 0;
     public GameObject CheckedBox;
     
 
